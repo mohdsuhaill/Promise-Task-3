@@ -19,7 +19,7 @@ response
   .then((result) => {
     for (let i = 0; i < result.data.memes.length; i++) {
       const col = document.createElement("div");
-      col.classList = "col-sm-5 col-md-3 col-lg-4 col-xl-4";
+      col.classList = "col-sm-5 col-md-3 col-lg-4 col-xl-4 main";
       col.innerHTML = `
       <div class="card" style="width: 18erm;">
       <img src="${result.data.memes[i].url}" alt="memes img">
