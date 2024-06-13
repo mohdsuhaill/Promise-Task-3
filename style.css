@@ -2,12 +2,13 @@ body{
     margin:0;
     background-color: rgb(243 243 243)!important;
 }
+.cards-container{
+    display: grid;
+    overflow: hidden;
+    gap: 10px;
+    grid-template-columns: repeat(auto-);
+}
 .card{
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    align-content: normal;
-    margin-top: 20px;
     border-radius: 20px !important; 
     box-shadow: 5px 5px 5px 5px rgb(236, 233, 233);
     transition: transform .1s;
@@ -15,11 +16,8 @@ body{
 .card:hover{
     transform: scale(0.9);
 }
-
 #img{
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width:"460" ;
-    height:"345";
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+
