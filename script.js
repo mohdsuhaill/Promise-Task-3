@@ -19,16 +19,14 @@ response
   .then((result) => {
     for (let i = 0; i < result.data.memes.length; i++) {
       const col = document.createElement("div");
-      col.classList = "card-container col-xl-3";
+      col.classList = "container col-xl-3 col-md-4 col-sm-8 col-xs-5";
       col.innerHTML = `
-      <div class="card-group ">
       <div class="card" style="width: 18erm";>
       <img class="card-img-top" src="${result.data.memes[i].url}" alt="memes img" id="img">
-       <div class ="card-body">
-        <h4 class=text-center>${result.data.memes[i].name}</h4>
-       </div>
+       <div class ="card-footer">
+        <h6 class=text-center>${result.data.memes[i].name}</h4>
       </div>
-      `
+      ` 
       row.append(col)
     }
   });
